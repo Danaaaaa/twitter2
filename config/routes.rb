@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'help', to: 'static_pages#help'
   get 'about', to: 'static_pages#about'
   get 'signup', to: 'users#new'
+  get 'signin',  to: 'sessions#new'     
+  get 'signout', to: 'sessions#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
